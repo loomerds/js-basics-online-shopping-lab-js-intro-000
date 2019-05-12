@@ -19,7 +19,7 @@ function viewCart() {
   let list = "In your cart, you have";
   for(let i=0; i<cart.length; i++) {
     let conjunction = " ";
-    if(i>cart.length-1) {conjunction = " and "};
+    if(i>cart.length-2) {conjunction = " and "};
     if(i===0) {conjunction = " "};
     list = list + `${conjunction}${cart[i].itemName} at $${cart[i].itemPrice}${i<cart.length-1 ? "," : "."}`;
     message = list;
