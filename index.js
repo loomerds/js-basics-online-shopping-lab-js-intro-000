@@ -18,7 +18,7 @@ function viewCart() {
   let message = "Your shopping cart is empty.";
   let list = "In your cart, you have";
   for(let i=0; i<cart.length; i++) {
-    list = list + ` ${i>0 ? " and " : ""}${cart[i].itemName} at $${cart[i].itemPrice}${i<cart.length-1 ? "," : "."}`;
+    list = list + `${i>0 ? " and " : " "}${cart[i].itemName} at $${cart[i].itemPrice}${i<cart.length-1 ? "," : "."}`;
     message = list;
   }
   return message;
